@@ -1,0 +1,7 @@
+proc sql;
+  create table work.myself as
+  select * 
+  from mlt222.students
+  where stedent_name = 'Gleb Psarev'
+  ;
+quit;
