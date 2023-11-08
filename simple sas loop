@@ -1,0 +1,8 @@
+/* how to create loop in SAS Macro */
+%macro mTestLoop;
+
+  %do i=1 %to i=99;
+    %let a = &i + 1;
+  %end;
+%mend  mTestLoop;
+%mTestLoop;
